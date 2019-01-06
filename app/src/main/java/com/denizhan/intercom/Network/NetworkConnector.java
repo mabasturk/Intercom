@@ -1,7 +1,7 @@
 package com.denizhan.intercom.Network;
 
 /*
-    Yazar: Nehir
+    Yazacak Olan: Nehir
     Açıklama: Ev sahibine kaydedilen mesajları ve gerçek zamanlı okunan veriyi göndermeye ve karşıdan gönderilen veriyi
     almaya yaracak class.
 */

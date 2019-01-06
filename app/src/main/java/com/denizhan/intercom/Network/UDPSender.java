@@ -1,7 +1,7 @@
 package com.denizhan.intercom.Network;
 
 /*
-    Yazar: Nehir
+    Yazacak Olan: Nehir
     Açıklama: UDP protokolünde byte gönderme
 */
 
