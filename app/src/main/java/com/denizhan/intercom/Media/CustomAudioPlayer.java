@@ -1,10 +1,22 @@
 package com.denizhan.intercom.Media;
+import com.external.test.Interfaces.ActivityMediaInteractionInterface;
 
-/*
-    Yazacak Olan: Gizem
-    Açıklama: mp3 formatında ses oynatıcı
-*/
+    public class CustomAudioPlayer implements ActivityMediaInteractionInterface {
+        @Override
+        public void prepare() {
 
-public class CustomAudioPlayer {
+        }
+        @Override
+        public void start() {
 
+        }
+        @Override
+        public void stop() {
+
+        }
+        @Override
+        public void destroy() {
+
+        }
+    }
 }
