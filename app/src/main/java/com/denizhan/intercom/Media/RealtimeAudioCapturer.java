@@ -1,10 +1,25 @@
 package com.denizhan.intercom.Media;
+package com.external.test.Media;
+import com.external.test.Interfaces.ActivityMediaInteractionInterface;
 
-/*
-    Yazacak Olan: Alp
-    Açıklama: Gerçek zamanlı olarak mikrofondan sesi byte formatında alıp hazır hale getirmek
-*/
+public class RealtimeAudioCapturer implements ActivityMediaInteractionInterface {
+    @Override
+    public void prepare() {
 
-public class RealtimeAudioCapturer {
+    }
 
+    @Override
+    public void start() {
+
+    }
+
+    @Override
+    public void stop() {
+
+    }
+
+    @Override
+    public void destroy() {
+
+    }
 }
