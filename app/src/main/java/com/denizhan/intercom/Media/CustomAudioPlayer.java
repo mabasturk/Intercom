@@ -1,22 +1,48 @@
 package com.denizhan.intercom.Media;
+
+import android.media.MediaPlayer;
 import com.external.test.Interfaces.ActivityMediaInteractionInterface;
 
-    public class CustomAudioPlayer implements ActivityMediaInteractionInterface {
-        @Override
-        public void prepare() {
+import java.io.IOException;
 
-        }
-        @Override
-        public void start() {
+public class CustomAudioPlayer implements ActivityMediaInteractionInterface {
 
-        }
-        @Override
-        public void stop() {
+    private MediaPlayer player; // Android'in kendi medya oynatıcısı
 
-        }
-        @Override
-        public void destroy() {
+    public CustomAudioPlayer()
+    {
+        player = new MediaPlayer();
+    }
 
+    @Override
+    public void prepare()
+    {
+        try
+        {
+            player.setDataSource("/storage/emulated/0/sample.3gp"); // Oynatılacak dosyayı seç
+            player.prepare(); // Oynatma için hazırlan
         }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void start()
+    {
+        player.start(); // Oynatmayı başlat
+    }
+
+    @Override
+    public void stop()
+    {
+        player.stop(); // Oynatmayı durdur
+    }
+
+    @Override
+    public void destroy()
+    {
+        player.release(); // MediaPlayer objesini ve kullandığı kaynakları temizle
     }
 }
